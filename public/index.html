@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Full-stack engineer in Bangalore. Projects, experience and contact.">
+        <meta property="og:title" content="Namratha Manikonda · Full-stack engineer">
+        <meta property="og:description" content="Full-stack engineer by day, yogi by evening, occasional potter.">
+        <meta property="og:image" content="https://namrathama.github.io/images/Preview_Photo.png">
+        <meta property="og:url" content="https://namrathama.github.io/">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <script>
+            {
+                const savedTheme = localStorage.getItem("theme");
+                const preferDarkTheme = window.matchMedia(
+                    "(prefers-color-scheme:dark)",
+                ).matches;
+                document.documentElement.dataset.theme =
+                    savedTheme || (preferDarkTheme ? "dark" : "light");
+            }
+        </script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Namratha</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-inner">
+                <a href="#" class="logo">namratha<span>.</span></a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="links">
+                    <a class="icon-btn" href="https://github.com/NamrathaMa?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg></a>
+                    <a class="icon-btn" href="https://www.linkedin.com/in/namratham/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg></a>
+                    <button class="icon-btn" id="theme-toggle" aria-label="change between light and dark"><svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg><svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></button>
+                </div>
+
+            </div>
+        </header>
+        <main class="container">
+            <section id="intro" class="intro">
+                <div>                
+                    <h1>hi, i'm <span class="nowrap"><span class="name">namratha</span>.<span class="cursor"></span></span></h1>
+                    <p class="lede">Full-stack engineer by day, yoga-practitioner by evening, and occasional potter. I like turning business requirements into software that’s dependable and fun to use. Welcome to my corner of the internet!</p>
+                    <div class="cta">
+                        <a class="btn" href="#contact">Say hi</a>
+                        <a class="btn btn-solid" href="#projects">See My Projects</a>
+                    </div>
+                </div>
+                <pre class="code"><span class="keyword">const</span> namratha = {
+  role:     <span class="string">'Full-stack engineer'</span>,
+  based:    <span class="string">'Bangalore, India'</span>,
+  stack:    <span class="string">['Angular', 'React', 'Node', 'SQL']</span>,
+  learning: <span class="string">'React, one project at a time'</span>,
+  status:   <span class="string">'open to work'</span>,
+};
+<span class="comment">// export default namratha;</span></pre>
+            </section>
+  
+
+            <section id="about">
+                <p class="section-tag">&lt;About /&gt;</p>
+                <h2>A bit about me</h2>
+                <div class="about-grid">
+                    <div>
+                        <p>Most recently I was a Full-Stack Software Engineer at Chubb, working in Angular, TypeScript and SQL on insurance applications. Before that I was at Danlaw and spent three years at Deloitte working on Oracle HCM Cloud.</p>
+                        <p>I studied Computer Science at NYU Courant (MS) and PES University (B.Tech). Here are the technologies I work with most:</p>
+                        <ul class="skills">
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Node.js</li>
+                            <li>SQL</li>
+                            <li>MongoDB</li>
+
+                        </ul>
+                    </div>
+                    <div class="photo">
+                        <img src="images/Nammie_Photo.jpg" alt="Namratha Manikonda"/>
+                    </div>
+ 
+                </div>
+            </section>
+            <section id="experience">
+                <p class="section-tag">&lt;Experience /&gt;</p>
+                <h2>Where I've worked</h2>
+                <div class="experience-grid" id="experience-grid">
+                </div>
+            </section>
+            <section id="education">
+                <p class="section-tag">&lt;Education /&gt;</p>
+                <h2>Where I studied</h2>
+                <div class="education-grid">
+                    <div class="school">
+                        <h3> New York University, Courant Institute</h3> 
+                        <p class="degree">MS Computer Science </p>
+                        <p class="year">2021 – 2022</p>
+                    </div>
+                    <div class="school">
+                        <h3> PES University</h3>
+                        <p class="degree">B.Tech, Information Science and Engineering</p>
+                        <p class="year">2014 – 2018</p>
+                    </div>
+                </div>
+
+            </section>
+            <section id="projects">
+                <p class="section-tag">&lt;Projects /&gt;</p>
+                <h2>Things I've built</h2>
+                <div class="projects-grid" id="projects-grid"></div>
+            </section>
+            <section id="contact">
+                <p class="section-tag">&lt;Contact me /&gt;</p>
+                <h2>Let's talk</h2>
+                <p class="contact-text">
+                    I'm looking for full-stack engineering roles in Bangalore. If you're hiring, or just want to talk shop, my inbox is open.
+                </p>
+                <div class="email-row">
+                    <span class="email" id="email">nammy.manikonda@gmail.com</span>
+                    <button class="copy-btn" id="copy-btn" aria-label="copy email">
+                        <svg class="icon-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                        <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg>
+                        <span class="copy-label" id="copy-label">Copy Email</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p>
+                    Designed and built by Namratha Manikonda · 2026
+                </p>
+            </div>
+
+        </footer>
+        <!-- <script src="data.js"></script> -->
+        <script src="script.js"></script>
+    </body>
+</html>
